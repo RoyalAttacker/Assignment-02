@@ -4,16 +4,15 @@ document.body.style.backgroundColor = 'pink'
 /*Question 1st*/
 //programm to add first n even numbers
 let sum = 0
+let even = 2
 const sumEvens = (n: number): number => {
-   for (let index = 0; index <= n; index++) {
-      if (index % 2 === 0) {
-         sum = sum + index
-      }
+   for (let index = 1; index <= n; index++) {
+       sum = sum+(even*index)
    }
    return sum
 }
-const sum1 = sumEvens(9)
-console.log(sum1);// 20
+const sum1 = sumEvens(4)
+console.log(sum1);// 30
 
 //
 
@@ -109,7 +108,6 @@ function findMax(a: number[]) {
    }
    console.log(max + ' is a largest number in array')
 }
-
 findMax([2, 3, 2, 6, 5, 4, 5, 6, 3, 1, 6])
 //
 
